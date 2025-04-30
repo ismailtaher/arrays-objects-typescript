@@ -52,6 +52,16 @@ let JP = {
 };
 evh = JP;
 const greetGuitarist = (Guitarsist) => {
-    return `Hello ${Guitarsist.name}!`;
+    var _a;
+    return `Hello ${(_a = Guitarsist.name) === null || _a === void 0 ? void 0 : _a.toUpperCase()}!`;
 };
 console.log(greetGuitarist(JP));
+//
+// Interface
+//
+/* interface Musician {
+  name: string;
+  active?: boolean;
+  albums: (string | number)[];
+}
+ */
