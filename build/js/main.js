@@ -32,3 +32,26 @@ mixed = myTuple;
 let myObj;
 myObj = [];
 console.log(typeof myObj);
+myObj = bands;
+myObj = {};
+const exampleObj = {
+    prop1: "Ismail",
+    prop2: true,
+};
+//exampleObj.prop2 = 42
+exampleObj.prop2 = false;
+let evh = {
+    name: "Eddie",
+    active: false,
+    album: [1984, 5150, "OU812"],
+};
+let JP = {
+    name: "Jimmy",
+    active: true,
+    album: ["I", "II", "IV"],
+};
+evh = JP;
+const greetGuitarist = (Guitarsist) => {
+    return `Hello ${Guitarsist.name}!`;
+};
+console.log(greetGuitarist(JP));
