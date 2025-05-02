@@ -101,3 +101,8 @@ console.log(greetGuitarist(JP));
   albums: (string | number)[];
 }
  */
+
+//
+// Enums
+//
+// Unlike most TypeScript features, Enums are not type-level addition to JavaScript but something added to the language at runtime
