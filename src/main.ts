@@ -106,3 +106,13 @@ console.log(greetGuitarist(JP));
 // Enums
 //
 // Unlike most TypeScript features, Enums are not type-level addition to JavaScript but something added to the language at runtime
+
+enum Grade {
+  U,
+  D,
+  C,
+  B,
+  A,
+}
+
+console.log(Grade.U);

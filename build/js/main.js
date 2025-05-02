@@ -53,7 +53,10 @@ let JP = {
 evh = JP;
 const greetGuitarist = (Guitarsist) => {
     var _a;
+    //if (Guitarsist.name) { or we could use narrowing
     return `Hello ${(_a = Guitarsist.name) === null || _a === void 0 ? void 0 : _a.toUpperCase()}!`;
+    //}
+    // return `Hello!`
 };
 console.log(greetGuitarist(JP));
 //
@@ -65,3 +68,16 @@ console.log(greetGuitarist(JP));
   albums: (string | number)[];
 }
  */
+//
+// Enums
+//
+// Unlike most TypeScript features, Enums are not type-level addition to JavaScript but something added to the language at runtime
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 0] = "U";
+    Grade[Grade["D"] = 1] = "D";
+    Grade[Grade["C"] = 2] = "C";
+    Grade[Grade["B"] = 3] = "B";
+    Grade[Grade["A"] = 4] = "A";
+})(Grade || (Grade = {}));
+console.log(Grade.U);
